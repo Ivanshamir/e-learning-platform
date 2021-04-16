@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'students.apps.StudentsConfig',
     'embed_video',
     'memcache_status',
-    'rest_framework'
+    'rest_framework',
+    'chat',
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -148,3 +150,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
+ASGI_APPLICATION = 'educa.routing.application'
